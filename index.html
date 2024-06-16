@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howdy World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Include the SVG filter -->
+      <svg width="0" height="0">
+        <filter id="grain">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+            <feColorMatrix type="saturate" values="0"></feColorMatrix>
+            <feComponentTransfer>
+                <feFuncA type="table" tableValues="0 0 0.4 0.8"></feFuncA>
+            </feComponentTransfer>
+            <feBlend mode="multiply" in="SourceGraphic"></feBlend>
+        </filter>
+    </svg>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-wrapper">
+                <img src="images/kai logo.png" alt="Profile Picture" class="profile-pic">
+            </div>
+            <h1>howdy<br>world</h1>
+            <p>im kai</p>
+            <div class="links">
+                <button>website</button>
+                <button>linkedin</button>
+                <button>twitter</button>
+                <button>tiktok</button>
+                <button>youtube</button>
+                <button>newsletter</button>
+            </div>
+        </div>
+        <div class="content">
+            <h2>diary of a designer</h2>
+            <p><i> < learning how to code > </i></p>
+            
+            <ul>
+                <li>day 1: june 7, 2024: Signed up for Codedex</li>
+                <li>day 2: june 8, 2024: Watched Thu Vu - how to learn AI in 2024 roadmap</li>
+                <li>day 3: june 9, 2024: finished selectors on CSS module</li>
+                <li>day 4: june 10, 2024: finished properties and made invitation CSS</li>
+                <li>day 5: june 11, 2024: finished Box Model, made local library CSS</li>
+                <li>day 6: june 12, 2024: finished CSS course and made a Star Trek AI Characters gallery</li>
+                <li>day 7: june 13, 2024: Download and set up cursor, sketched out website</li>
+                <li>day 8: june 14, 2024: lofi > midfi html/css website in figma, watched vid by pooja dutt</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
